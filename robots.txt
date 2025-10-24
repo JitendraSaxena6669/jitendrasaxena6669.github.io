@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://bighit.co.in/sitemap.xml

@@ -126,6 +126,53 @@
   /* Footer */
   .footer{background:var(--dark);color:#cfd8dc;padding:40px 0}
   .footer a{color:var(--accent)}
+        h2 {
+      font-size: 1.6em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .city-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+      gap: 12px;
+      list-style: none;
+      padding: 0;
+    }
+    .city-grid li a {
+      display: block;
+      padding: 10px 14px;
+      background: #f5f7fa;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      color: #0050b3;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+    .city-grid li a:hover {
+      background: #0050b3;
+      color: #fff;
+    }
+    #moreCities { display: none; }
+    .show-more-btn {
+      display: block;
+      margin: 25px auto;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      background: #0073e6;
+      color: #fff;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .show-more-btn:hover { background: #0050b3; }
+    footer {
+      background: #f2f4f8;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9em;
+      color: #555;
+    }
 
   /* Decorative asymmetric blocks for modern layout */
   .asym-1{background:linear-gradient(180deg,rgba(0,123,255,0.08),transparent);border-radius:12px;padding:18px}
@@ -489,7 +536,121 @@
       <p class="muted-small mt-3">Note: City pages are optimized for local search. If you want a demo for your city, click the city name or message us on WhatsApp.</p>
     </div>
   </section>
+<section id="cities">
+  <h2>Also Available In</h2>
+  <ul class="city-grid" id="cityList">
+    <!-- Top 25 Major Cities -->
+    <li><a href="/website-software-development/delhi">Delhi</a></li>
+    <li><a href="/website-software-development/mumbai">Mumbai</a></li>
+    <li><a href="/website-software-development/bengaluru">Bengaluru</a></li>
+    <li><a href="/website-software-development/hyderabad">Hyderabad</a></li>
+    <li><a href="/website-software-development/ahmedabad">Ahmedabad</a></li>
+    <li><a href="/website-software-development/chennai">Chennai</a></li>
+    <li><a href="/website-software-development/kolkata">Kolkata</a></li>
+    <li><a href="/website-software-development/pune">Pune</a></li>
+    <li><a href="/website-software-development/jaipur">Jaipur</a></li>
+    <li><a href="/website-software-development/surat">Surat</a></li>
+    <li><a href="/website-software-development/kanpur">Kanpur</a></li>
+    <li><a href="/website-software-development/lucknow">Lucknow</a></li>
+    <li><a href="/website-software-development/nagpur">Nagpur</a></li>
+    <li><a href="/website-software-development/indore">Indore</a></li>
+    <li><a href="/website-software-development/thane">Thane</a></li>
+    <li><a href="/website-software-development/bhopal">Bhopal</a></li>
+    <li><a href="/website-software-development/vadodara">Vadodara</a></li>
+    <li><a href="/website-software-development/vishakhapatnam">Visakhapatnam</a></li>
+    <li><a href="/website-software-development/patna">Patna</a></li>
+    <li><a href="/website-software-development/ghaziabad">Ghaziabad</a></li>
+    <li><a href="/website-software-development/ludhiana">Ludhiana</a></li>
+    <li><a href="/website-software-development/agra">Agra</a></li>
+    <li><a href="/website-software-development/nashik">Nashik</a></li>
+    <li><a href="/website-software-development/faridabad">Faridabad</a></li>
+    <li><a href="/website-software-development/meerut">Meerut</a></li>
+  </ul>
 
+  <ul class="city-grid" id="moreCities">
+    <!-- Next 75 Cities -->
+    <li><a href="/website-software-development/rajkot">Rajkot</a></li>
+    <li><a href="/website-software-development/kalyan">Kalyan</a></li>
+    <li><a href="/website-software-development/vasai-virar">Vasai-Virar</a></li>
+    <li><a href="/website-software-development/varanasi">Varanasi</a></li>
+    <li><a href="/website-software-development/srinagar">Srinagar</a></li>
+    <li><a href="/website-software-development/aurangabad">Aurangabad</a></li>
+    <li><a href="/website-software-development/dhanbad">Dhanbad</a></li>
+    <li><a href="/website-software-development/amritsar">Amritsar</a></li>
+    <li><a href="/website-software-development/navi-mumbai">Navi Mumbai</a></li>
+    <li><a href="/website-software-development/allahabad">Prayagraj (Allahabad)</a></li>
+    <li><a href="/website-software-development/howrah">Howrah</a></li>
+    <li><a href="/website-software-development/ranchi">Ranchi</a></li>
+    <li><a href="/website-software-development/gwalior">Gwalior</a></li>
+    <li><a href="/website-software-development/jabalpur">Jabalpur</a></li>
+    <li><a href="/website-software-development/coimbatore">Coimbatore</a></li>
+    <li><a href="/website-software-development/vijayawada">Vijayawada</a></li>
+    <li><a href="/website-software-development/jodhpur">Jodhpur</a></li>
+    <li><a href="/website-software-development/madurai">Madurai</a></li>
+    <li><a href="/website-software-development/raipur">Raipur</a></li>
+    <li><a href="/website-software-development/kota">Kota</a></li>
+    <li><a href="/website-software-development/guwahati">Guwahati</a></li>
+    <li><a href="/website-software-development/chandigarh">Chandigarh</a></li>
+    <li><a href="/website-software-development/solapur">Solapur</a></li>
+    <li><a href="/website-software-development/hubli">Hubli–Dharwad</a></li>
+    <li><a href="/website-software-development/bareilly">Bareilly</a></li>
+    <li><a href="/website-software-development/mysore">Mysore</a></li>
+    <li><a href="/website-software-development/moradabad">Moradabad</a></li>
+    <li><a href="/website-software-development/tiruchirappalli">Tiruchirappalli</a></li>
+    <li><a href="/website-software-development/jalandhar">Jalandhar</a></li>
+    <li><a href="/website-software-development/bhubaneswar">Bhubaneswar</a></li>
+    <li><a href="/website-software-development/salem">Salem</a></li>
+    <li><a href="/website-software-development/warangal">Warangal</a></li>
+    <li><a href="/website-software-development/guntur">Guntur</a></li>
+    <li><a href="/website-software-development/bhiwandi">Bhiwandi</a></li>
+    <li><a href="/website-software-development/saharanpur">Saharanpur</a></li>
+    <li><a href="/website-software-development/gorakhpur">Gorakhpur</a></li>
+    <li><a href="/website-software-development/bikaner">Bikaner</a></li>
+    <li><a href="/website-software-development/amravati">Amravati</a></li>
+    <li><a href="/website-software-development/noida">Noida</a></li>
+    <li><a href="/website-software-development/jamshedpur">Jamshedpur</a></li>
+    <li><a href="/website-software-development/bhilai">Bhilai</a></li>
+    <li><a href="/website-software-development/cuttack">Cuttack</a></li>
+    <li><a href="/website-software-development/firozabad">Firozabad</a></li>
+    <li><a href="/website-software-development/kochi">Kochi</a></li>
+    <li><a href="/website-software-development/dehradun">Dehradun</a></li>
+    <li><a href="/website-software-development/ajmer">Ajmer</a></li>
+    <li><a href="/website-software-development/jamnagar">Jamnagar</a></li>
+    <li><a href="/website-software-development/ujjain">Ujjain</a></li>
+    <li><a href="/website-software-development/kolhapur">Kolhapur</a></li>
+    <li><a href="/website-software-development/rohtak">Rohtak</a></li>
+    <li><a href="/website-software-development/panipat">Panipat</a></li>
+    <li><a href="/website-software-development/loni">Loni</a></li>
+    <li><a href="/website-software-development/nellore">Nellore</a></li>
+    <li><a href="/website-software-development/bokaro">Bokaro</a></li>
+    <li><a href="/website-software-development/belgaum">Belgaum</a></li>
+    <li><a href="/website-software-development/kollam">Kollam</a></li>
+    <li><a href="/website-software-development/mangalore">Mangalore</a></li>
+    <li><a href="/website-software-development/tirunelveli">Tirunelveli</a></li>
+    <li><a href="/website-software-development/muzaffarnagar">Muzaffarnagar</a></li>
+    <li><a href="/website-software-development/rajahmundry">Rajahmundry</a></li>
+    <li><a href="/website-software-development/trichy">Trichy</a></li>
+    <li><a href="/website-software-development/alwar">Alwar</a></li>
+    <li><a href="/website-software-development/delhi-ncr">Delhi NCR</a></li>
+    <li><a href="/website-software-development/silchar">Silchar</a></li>
+    <li><a href="/website-software-development/gaya">Gaya</a></li>
+    <li><a href="/website-software-development/jhansi">Jhansi</a></li>
+    <li><a href="/website-software-development/tirupati">Tirupati</a></li>
+    <li><a href="/website-software-development/ambala">Ambala</a></li>
+    <li><a href="/website-software-development/dibrugarh">Dibrugarh</a></li>
+    <li><a href="/website-software-development/shimla">Shimla</a></li>
+    <li><a href="/website-software-development/darbhanga">Darbhanga</a></li>
+    <li><a href="/website-software-development/puducherry">Puducherry</a></li>
+    <li><a href="/website-software-development/panaji">Panaji</a></li>
+    <li><a href="/website-software-development/itanagar">Itanagar</a></li>
+    <li><a href="/website-software-development/tezpur">Tezpur</a></li>
+    <li><a href="/website-software-development/hoshiarpur">Hoshiarpur</a></li>
+    <li><a href="/website-software-development/port-blair">Port Blair</a></li>
+    <li><a href="/website-software-development/aizawl">Aizawl</a></li>
+    <li><a href="/website-software-development/imphal">Imphal</a></li>
+  </ul>
+  <button class="show-more-btn" id="toggleCities">Show More Cities ▼</button>
+</section>
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container text-center">
@@ -506,6 +667,27 @@
   </footer>
 
   <!-- SCRIPTS -->
+  
+<script>
+const toggleBtn = document.getElementById('toggleCities');
+const moreCities = document.getElementById('moreCities');
+toggleBtn.addEventListener('click', () => {
+  const visible = moreCities.style.display === 'block';
+  moreCities.style.display = visible ? 'none' : 'block';
+  toggleBtn.textContent = visible ? 'Show More Cities ▼' : 'Show Less Cities ▲';
+});
+</script>
+
+<!-- Hidden JSON-LD schema for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "BigHit Website & Software Development",
+  "url": "https://bighit.co.in/",
+  "areaServed": ["Delhi","Mumbai","Bengaluru","Hyderabad","Ahmedabad","Chennai","Kolkata","Pune","Jaipur","Surat","Kanpur","Lucknow","Nagpur","Indore","Thane","Bhopal","Vadodara","Visakhapatnam","Patna","Ghaziabad","Ludhiana","Agra","Nashik","Faridabad","Meerut","Rajkot","Kalyan","Vasai-Virar","Varanasi","Srinagar","Aurangabad","Dhanbad","Amritsar","Navi Mumbai","Prayagraj","Howrah","Ranchi","Gwalior","Jabalpur","Coimbatore","Vijayawada","Jodhpur","Madurai","Raipur","Kota","Guwahati","Chandigarh","Solapur","Hubli-Dharwad","Bareilly","Mysore","Moradabad","Tiruchirappalli","Jalandhar","Bhubaneswar","Salem","Warangal","Guntur","Bhiwandi","Saharanpur","Gorakhpur","Bikaner","Amravati","Noida","Jamshedpur","Bhilai","Cuttack","Firozabad","Kochi","Dehradun","Ajmer","Jamnagar","Ujjain","Kolhapur","Rohtak","Panipat","Loni","Nellore","Bokaro","Belgaum","Kollam","Mangalore","Tirunelveli","Muzaffarnagar","Rajahmundry","Trichy","Alwar","Delhi NCR","Silchar","Gaya","Jhansi","Tirupati","Ambala","Dibrugarh","Shimla","Darbhanga","Puducherry","Panaji","Itanagar","Tezpur","Hoshiarpur","Port Blair","Aizawl","Imphal"]
+}
+</script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
@@ -551,3 +733,4 @@
   </script>
 </body>
 </html>
+

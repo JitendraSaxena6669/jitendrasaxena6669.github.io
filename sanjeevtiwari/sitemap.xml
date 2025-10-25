@@ -1,43 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sanjeevtiwari.travel/</loc>
+    <loc>https://yourdomain.com/sanjeevtiwari/</loc>
     <lastmod>2025-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://sanjeevtiwari.travel/gallery.html</loc>
+    <loc>https://yourdomain.com/sanjeevtiwari/packages.html</loc>
+    <lastmod>2025-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/sanjeevtiwari/gallery.html</loc>
     <lastmod>2025-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sanjeevtiwari.travel/about.html</loc>
+    <loc>https://yourdomain.com/sanjeevtiwari/about.html</loc>
     <lastmod>2025-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sanjeevtiwari.travel/contact.html</loc>
+    <loc>https://yourdomain.com/sanjeevtiwari/contact.html</loc>
     <lastmod>2025-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sanjeevtiwari.travel/sitemap.html</loc>
+    <loc>https://yourdomain.com/sanjeevtiwari/sitemap.html</loc>
     <lastmod>2025-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://sanjeevtiwari.travel/tos.html</loc>
+    <loc>https://yourdomain.com/sanjeevtiwari/tos.html</loc>
     <lastmod>2025-10-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://sanjeevtiwari.travel/privacy.html</loc>
+    <loc>https://yourdomain.com/sanjeevtiwari/privacy.html</loc>
     <lastmod>2025-10-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

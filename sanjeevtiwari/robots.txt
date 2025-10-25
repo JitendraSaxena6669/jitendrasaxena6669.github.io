@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Allow indexing of important pages
+Allow: /index.html
+Allow: /gallery.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /sitemap.html
+Allow: /tos.html
+Allow: /privacy.html
+
+# Sitemap location
+Sitemap: https://sanjeevtiwari.travel/sitemap.xml
+
+# Crawl delay to be nice to servers
+Crawl-delay: 1

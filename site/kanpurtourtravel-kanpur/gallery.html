@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Kanpur Tour and Travels | Travel Destinations</title>
+    
+    <meta name="description" content="Browse our photo gallery showcasing beautiful destinations and travel experiences. Kanpur Tour and Travels - creating memories worth cherishing.">
+    <meta name="keywords" content="travel gallery, destination photos, Kanpur tours gallery, vacation pictures">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="4.css">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0fdf4;
+            padding-top: 80px;
+        }
+        
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+        
+        .gallery-container {
+            padding: 60px 0;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(5,150,105,0.15);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            color: white;
+            padding: 1rem;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+        
+        .page-title {
+            text-align: center;
+            color: #059669;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="color: #059669; font-weight: 700;">
+                <i class="fas fa-plane-departure"></i> Kanpur Tour & Travels
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="gallery-container">
+        <div class="container">
+            <h1 class="page-title">Photo Gallery</h1>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery/1.jpg" alt="Luxury mountain destination for couples from Kanpur" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h5>Mountain Paradise</h5>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery/2.jpg" alt="Family vacation packages Kanpur tours" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h5>Family Adventures</h5>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery/3.jpg" alt="Affordable beach tours from Kanpur" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h5>Beach Escapes</h5>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery/4.jpg" alt="Shimla Manali snow adventure Kanpur travel" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h5>Snow Adventures</h5>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery/5.jpg" alt="Goa beach party tours Kanpur" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h5>Goa Beaches</h5>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery/6.jpg" alt="Rajasthan heritage palace tour Kanpur" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h5>Royal Rajasthan</h5>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery/7.jpg" alt="Kerala backwaters houseboat Kanpur tours" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h5>Kerala Backwaters</h5>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery/8.jpg" alt="Uttarakhand spiritual tour Kanpur" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h5>Spiritual Journey</h5>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery/9.jpg" alt="Kashmir valley tour from Kanpur" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h5>Kashmir Valley</h5>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery/10.jpg" alt="Adventure trekking tours Kanpur" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h5>Adventure Treks</h5>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery/11.jpg" alt="Wildlife safari packages Kanpur travel" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h5>Wildlife Safari</h5>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery/12.jpg" alt="Romantic couple destinations Kanpur" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h5>Romantic Getaways</h5>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery/13.jpg" alt="Hill station tours from Kanpur" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h5>Hill Stations</h5>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery/14.jpg" alt="Cultural heritage tours Kanpur" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h5>Cultural Heritage</h5>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery/15.jpg" alt="Scenic landscapes tour packages Kanpur" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h5>Scenic Landscapes</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="index.html#contact" class="btn" style="background: #059669; color: white; padding: 12px 40px; border-radius: 24px; font-weight: 600;">
+                    <i class="fas fa-phone"></i> Contact Us for More Details
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating CTAs -->
+    <a href="https://wa.me/917888499960" target="_blank" style="position: fixed; right: 20px; bottom: 100px; width: 60px; height: 60px; border-radius: 50%; background: #25D366; color: white; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; box-shadow: 0 4px 20px rgba(0,0,0,0.3); z-index: 1000; text-decoration: none;">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <a href="tel:+917888499960" style="position: fixed; right: 20px; bottom: 30px; width: 60px; height: 60px; border-radius: 50%; background: #007bff; color: white; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; box-shadow: 0 4px 20px rgba(0,0,0,0.3); z-index: 1000; text-decoration: none;">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer style="background: #064e3b; color: white; padding: 2rem 0; text-align: center; margin-top: 60px;">
+        <div class="container">
+            <p>&copy; 2025 Kanpur Tour and Travels | Website designed and developed by <a href="https://bighit.co.in" target="_blank" style="color: #059669;">Vajra Abhinav Enterprises</a></p>
+            <p style="font-size: 0.9rem; opacity: 0.8;">Website provided free of charge for business purposes. Limited support only.</p>
+            <p class="mt-2">
+                <a href="tos.html" style="color: #059669;">Terms of Service</a> | 
+                <a href="privacy.html" style="color: #059669;">Privacy Policy</a> | 
+                <a href="sitemap.html" style="color: #059669;">Sitemap</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

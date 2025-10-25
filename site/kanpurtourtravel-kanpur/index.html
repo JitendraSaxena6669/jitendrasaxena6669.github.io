@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanpur Tour and Travels - Best Tour Packages in Kanpur | Affordable Family & Couple Destinations</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Kanpur Tour and Travels offers luxurious travel packages for couples and families at affordable prices. Book your dream destination from Kanpur, Uttar Pradesh.">
+    <meta name="keywords" content="Kanpur tour packages, travel agency Kanpur, family tour packages, couple destinations, affordable tours Kanpur, Yashoda Nagar tours">
+    <meta name="author" content="Kanpur Tour and Travels">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Kanpur Tour and Travels - Premium Tour Packages">
+    <meta property="og:description" content="Awesome Destiny luxuries places for couples and family at affordable price">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kanpurtourandtravels.com">
+    
+    <!-- Google Business Profile -->
+    <meta name="geo.region" content="IN-UP">
+    <meta name="geo.placename" content="Kanpur">
+    <meta name="geo.position" content="26.43536;83.50750">
+    
+    <!-- Sitemap -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="4.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "Kanpur Tour and Travels",
+      "image": "https://kanpurtourandtravels.com/images/logo.jpg",
+      "description": "Awesome Destiny luxuries places for couples and family at affordable price",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "209/3 Manmohar vihar satbari yashoda nagar",
+        "addressLocality": "Kanpur",
+        "addressRegion": "UP",
+        "postalCode": "208023",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.4375,
+        "longitude": 80.3418
+      },
+      "telephone": "+917888499960",
+      "priceRange": "₹₹",
+      "openingHours": "Mo-Su 09:00-21:00"
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary-color: #059669;
+            --secondary-color: #047857;
+            --background-color: #f0fdf4;
+            --text-color: #064e3b;
+            --button-bg: #059669;
+            --button-text: #ffffff;
+            --button-radius: 24px;
+            --font-family: 'Poppins', sans-serif;
+            --card-shadow: 0 4px 12px rgba(5,150,105,0.15);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-family);
+            color: var(--text-color);
+            background-color: var(--background-color);
+            overflow-x: hidden;
+        }
+        
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Navbar */
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-color) !important;
+            font-size: 1.5rem;
+        }
+        
+        .nav-link {
+            color: var(--text-color) !important;
+            font-weight: 500;
+            margin: 0 0.5rem;
+            transition: color 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 120px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>');
+            animation: float 20s infinite linear;
+        }
+        
+        @keyframes float {
+            from { transform: translateY(0); }
+            to { transform: translateY(-100px); }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease 0.2s backwards;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .btn-custom {
+            background: white;
+            color: var(--primary-color);
+            padding: 12px 35px;
+            border-radius: var(--button-radius);
+            font-weight: 600;
+            border: none;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .btn-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+        }
+        
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        /* Package Cards */
+        .package-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 2rem;
+        }
+        
+        .package-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(5,150,105,0.25);
+        }
+        
+        .package-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .package-body {
+            padding: 1.5rem;
+        }
+        
+        .package-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin-bottom: 1rem;
+        }
+        
+        .package-price {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        /* Floating CTAs */
+        .floating-cta {
+            position: fixed;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .whatsapp-btn {
+            bottom: 100px;
+        }
+        
+        .call-btn {
+            bottom: 30px;
+        }
+        
+        .cta-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+        
+        .cta-btn:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+        
+        .whatsapp-btn {
+            background: #25D366;
+        }
+        
+        .call-btn {
+            background: #007bff;
+        }
+        
+        /* Section Styling */
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-color);
+            margin-bottom: 3rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background: var(--primary-color);
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+        
+        /* Map Section */
+        .map-container {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            height: 450px;
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Contact Form */
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .form-control {
+            border-radius: 12px;
+            padding: 12px;
+            border: 2px solid #e5e7eb;
+            margin-bottom: 1rem;
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.2rem rgba(5,150,105,0.15);
+        }
+        
+        .submit-btn {
+            background: var(--button-bg);
+            color: var(--button-text);
+            padding: 12px 40px;
+            border-radius: var(--button-radius);
+            border: none;
+            font-weight: 600;
+            width: 100%;
+            transition: all 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(5,150,105,0.3);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--text-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        footer a:hover {
+            color: white;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .floating-cta {
+                right: 15px;
+            }
+            
+            .cta-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-plane-departure"></i> Kanpur Tour & Travels
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content text-center">
+                <h1 class="hero-title">Kanpur Tour and Travels - Your Gateway to Dream Destinations</h1>
+                <p class="hero-subtitle">Awesome Destiny Luxurious Places for Couples and Family at Affordable Prices in Kanpur</p>
+                <a href="#packages" class="btn btn-custom">Explore Packages</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Gallery Preview -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/gallery/1.jpg" alt="Luxury destination for couples in Kanpur" loading="lazy">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/gallery/2.jpg" alt="Family vacation packages from Kanpur" loading="lazy">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/gallery/3.jpg" alt="Affordable tour packages Kanpur" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages">
+        <div class="container">
+            <h2 class="section-title">Our Tour Packages</h2>
+            <div class="row">
+                <!-- Package 1 -->
+                <div class="col-md-4">
+                    <div class="package-card">
+                        <img src="images/gallery/4.jpg" alt="Shimla Manali tour package from Kanpur" class="package-img">
+                        <div class="package-body">
+                            <h3 class="package-title">Shimla Manali Delight</h3>
+                            <p>6 Days / 5 Nights</p>
+                            <p class="package-price">₹15,999</p>
+                            <p>Experience the beauty of Himachal with our specially curated package for couples and families.</p>
+                            <a href="packages.html#shimla" class="btn submit-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Package 2 -->
+                <div class="col-md-4">
+                    <div class="package-card">
+                        <img src="images/gallery/5.jpg" alt="Goa beach holiday from Kanpur" class="package-img">
+                        <div class="package-body">
+                            <h3 class="package-title">Goa Beach Paradise</h3>
+                            <p>5 Days / 4 Nights</p>
+                            <p class="package-price">₹12,999</p>
+                            <p>Relax on pristine beaches, enjoy water sports, and explore vibrant nightlife in Goa.</p>
+                            <a href="packages.html#goa" class="btn submit-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Package 3 -->
+                <div class="col-md-4">
+                    <div class="package-card">
+                        <img src="images/gallery/6.jpg" alt="Rajasthan heritage tour Kanpur" class="package-img">
+                        <div class="package-body">
+                            <h3 class="package-title">Rajasthan Heritage Tour</h3>
+                            <p>7 Days / 6 Nights</p>
+                            <p class="package-price">₹18,999</p>
+                            <p>Explore the royal heritage of Jaipur, Udaipur, and Jodhpur with our exclusive package.</p>
+                            <a href="packages.html#rajasthan" class="btn submit-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="bg-white">
+        <div class="container">
+            <h2 class="section-title">Photo Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/gallery/7.jpg" alt="Tourist destination Kanpur travel agency" loading="lazy"></div>
+                <div class="gallery-item"><img src="images/gallery/8.jpg" alt="Couple holiday package Kanpur" loading="lazy"></div>
+                <div class="gallery-item"><img src="images/gallery/9.jpg" alt="Family tour Kanpur tour operator" loading="lazy"></div>
+                <div class="gallery-item"><img src="images/gallery/10.jpg" alt="Adventure tours from Kanpur" loading="lazy"></div>
+                <div class="gallery-item"><img src="images/gallery/11.jpg" alt="Budget tours Kanpur travel" loading="lazy"></div>
+                <div class="gallery-item"><img src="images/gallery/12.jpg" alt="Luxury destinations Kanpur tours" loading="lazy"></div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="gallery.html" class="btn submit-btn" style="width: auto; padding: 12px 40px;">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Kanpur Tour and Travels</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="images/gallery/13.jpg" alt="About Kanpur Tour and Travels" class="img-fluid rounded" style="border-radius: 20px !important; box-shadow: var(--card-shadow);">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="mb-4" style="color: var(--primary-color); font-weight: 600;">Your Trusted Travel Partner in Kanpur</h3>
+                    <p style="line-height: 1.8; font-size: 1.05rem;">
+                        Welcome to Kanpur Tour and Travels, your premier travel agency located in the heart of Yashoda Nagar, Kanpur. We specialize in creating unforgettable travel experiences for couples and families seeking luxurious destinations at affordable prices. With years of expertise in the travel industry, we understand that every journey should be special, memorable, and stress-free.
+                    </p>
+                    <p style="line-height: 1.8; font-size: 1.05rem;">
+                        Our mission is to transform your travel dreams into reality. Whether you're planning a romantic getaway, a family vacation, or an adventure expedition, we offer carefully curated tour packages that cater to diverse preferences and budgets. From the snow-capped mountains of Himachal Pradesh to the golden beaches of Goa, from the royal heritage of Rajasthan to the spiritual serenity of Uttarakhand, we cover all major tourist destinations across India.
+                    </p>
+                    <p style="line-height: 1.8; font-size: 1.05rem;">
+                        What sets us apart is our commitment to personalized service and attention to detail. We handle everything from accommodation and transportation to sightseeing and activities, ensuring a seamless travel experience. Our team of experienced travel consultants works closely with you to understand your preferences and design itineraries that match your expectations perfectly. We maintain strong relationships with hotels, resorts, and local service providers to guarantee quality and value for money.
+                    </p>
+                    <p style="line-height: 1.8; font-size: 1.05rem;">
+                        Located at 209/3 Manmohar Vihar, Satbari, Yashoda Nagar, Kanpur 208023, we are easily accessible and always ready to assist you. Our transparent pricing, reliable service, and customer-first approach have earned us the trust of countless travelers from Kanpur and surrounding areas. We believe that travel is not just about reaching a destination; it's about creating memories that last a lifetime. Let us be your companion in this beautiful journey. Contact us today at +917888499960 to start planning your next adventure!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white">
+        <div class="container">
+            <h2 class="section-title">Contact Us - Kanpur Office</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="contact-form">
+                        <h4 class="mb-4">Send us a Message</h4>
+                        <form>
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <input type="tel" class="form-control" placeholder="Phone Number" required>
+                            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <h4 class="mb-4">Contact Information</h4>
+                        <p><i class="fas fa-map-marker-alt" style="color: var(--primary-color); width: 20px;"></i> <strong>Address:</strong><br>209/3 Manmohar vihar satbari yashoda nagar kanpur 208023</p>
+                        <p><i class="fas fa-phone" style="color: var(--primary-color); width: 20px;"></i> <strong>Phone:</strong> <a href="tel:+917888499960" style="color: var(--text-color);">+91 78884 99960</a></p>
+                        <p><i class="fas fa-envelope" style="color: var(--primary-color); width: 20px;"></i> <strong>Email:</strong> info@kanpurtours.com</p>
+                        <p><i class="fas fa-clock" style="color: var(--primary-color); width: 20px;"></i> <strong>Working Hours:</strong><br>Mon - Sun: 9:00 AM - 9:00 PM</p>
+                        
+                        <div class="mt-4">
+                            <a href="https://wa.me/917888499960" class="btn submit-btn mb-2" style="background: #25D366;">
+                                <i class="fab fa-whatsapp"></i> WhatsApp Us
+                            </a>
+                            <a href="tel:+917888499960" class="btn submit-btn" style="background: #007bff;">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Google Map -->
+            <div class="map-container mt-5">
+                <iframe src="https://www.google.com/maps?q=26.43536,83.50750&hl=en&z=15&output=embed" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Kanpur Tour and Travels Location - Yashoda Nagar Kanpur">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating CTAs -->
+    <a href="https://wa.me/917888499960" class="cta-btn whatsapp-btn floating-cta" target="_blank" aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <a href="tel:+917888499960" class="cta-btn call-btn floating-cta" style="bottom: 30px;" aria-label="Call us now">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; trial will expire on October 2026 (Renew before this date ) Kanpur Tour and Travels | Website designed and developed by <a href="https://bighit.co.in" target="_blank">Vajra Abhinav Enterprises</a></p>
+            <p style="font-size: 0.9rem; opacity: 0.8;">Website provided free of charge for business purposes. Limited support only.</p>
+            <p class="mt-2">
+                <a href="tos.html">Terms of Service</a> | 
+                <a href="privacy.html">Privacy Policy</a> | 
+                <a href="sitemap.html">Sitemap</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

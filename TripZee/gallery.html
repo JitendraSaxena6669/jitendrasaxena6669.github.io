@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery | TripZee</title>
+    <meta name="description" content="Tour and travel gallery with 15 beautiful destination pics. TripZee - Gorakhpur's best travel moments.">
+    <meta name="keywords" content="travel gallery, trip photos, places, Gorakhpur tours, Uttar Pradesh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="5.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">TripZee</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="packages.html" class="nav-link">Packages</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1 class="mb-4">Gallery - TripZee's Best Destinations</h1>
+        <div class="row">
+            <!-- Display 15 images from images/gallery -->
+            {% for i in range(1, 16) %}
+            <div class="col-md-4 mb-2">
+                <div class="card">
+                    <img src="images/gallery/{{i}}.jpg" class="card-img-top" alt="Trip destination {{i}}">
+                </div>
+            </div>
+            {% endfor %}
+            <!-- For static HTML, replace above loop with actual image tags -->
+            <div class="col-md-4 mb-2"><div class="card"><img src="images/gallery/1.jpg" class="card-img-top" alt="Trip destination 1"></div></div>
+            <div class="col-md-4 mb-2"><div class="card"><img src="images/gallery/2.jpg" class="card-img-top" alt="Trip destination 2"></div></div>
+            <div class="col-md-4 mb-2"><div class="card"><img src="images/gallery/3.jpg" class="card-img-top" alt="Trip destination 3"></div></div>
+            <div class="col-md-4 mb-2"><div class="card"><img src="images/gallery/4.jpg" class="card-img-top" alt="Trip destination 4"></div></div>
+            <div class="col-md-4 mb-2"><div class="card"><img src="images/gallery/5.jpg" class="card-img-top" alt="Trip destination 5"></div></div>
+            <div class="col-md-4 mb-2"><div class="card"><img src="images/gallery/6.jpg" class="card-img-top" alt="Trip destination 6"></div></div>
+            <div class="col-md-4 mb-2"><div class="card"><img src="images/gallery/7.jpg" class="card-img-top" alt="Trip destination 7"></div></div>
+            <div class="col-md-4 mb-2"><div class="card"><img src="images/gallery/8.jpg" class="card-img-top" alt="Trip destination 8"></div></div>
+            <div class="col-md-4 mb-2"><div class="card"><img src="images/gallery/9.jpg" class="card-img-top" alt="Trip destination 9"></div></div>
+            <div class="col-md-4 mb-2"><div class="card"><img src="images/gallery/10.jpg" class="card-img-top" alt="Trip destination 10"></div></div>
+            <div class="col-md-4 mb-2"><div class="card"><img src="images/gallery/11.jpg" class="card-img-top" alt="Trip destination 11"></div></div>
+            <div class="col-md-4 mb-2"><div class="card"><img src="images/gallery/12.jpg" class="card-img-top" alt="Trip destination 12"></div></div>
+            <div class="col-md-4 mb-2"><div class="card"><img src="images/gallery/13.jpg" class="card-img-top" alt="Trip destination 13"></div></div>
+            <div class="col-md-4 mb-2"><div class="card"><img src="images/gallery/14.jpg" class="card-img-top" alt="Trip destination 14"></div></div>
+            <div class="col-md-4 mb-2"><div class="card"><img src="images/gallery/15.jpg" class="card-img-top" alt="Trip destination 15"></div></div>
+        </div>
+    </div>
+    <footer style="text-align:center; font-size:12px; margin-top:20px; padding:10px; border-top:1px solid #ccc;">
+      &copy; 2025  !! website designed and developed by <a href="https://bighit.co.in"> Vajra Abhinav Enterprises</a> ! All Right Reserved !!. <br>
+      Website provided free of charge for business purposes. Limited support only. <br>
+      <a href="/tos.html">Terms of Service</a> | <a href="/privacy.html">Privacy Policy</a>
+    </footer>
+</body>
+</html>

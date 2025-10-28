@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CSC Center | Digital Services Near You</title>
+<style>
+body{margin:0;font-family:"Segoe UI",sans-serif;background:#f7f9fc;color:#222;}
+header{display:flex;justify-content:space-between;align-items:center;padding:12px 24px;background:#0f172a;color:#fff;box-shadow:0 2px 6px rgba(0,0,0,.2);}
+header h1{font-size:1.2rem;margin:0;}
+header a.btn{background:#2563eb;color:#fff;padding:8px 16px;border-radius:6px;text-decoration:none;transition:.3s;}
+header a.btn:hover{background:#1e40af;}
+.hero{padding:60px 20px;text-align:center;background:linear-gradient(135deg,#3b82f6,#06b6d4);color:#fff;}
+.hero h2{font-size:2rem;margin-bottom:10px;}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;padding:40px 20px;max-width:1000px;margin:auto;}
+.card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 3px 10px rgba(0,0,0,.08);transition:.3s;text-align:center;}
+.card:hover{transform:translateY(-5px);}
+.card h3{margin-top:8px;color:#0f172a;}
+form{max-width:600px;margin:40px auto;padding:20px;background:#fff;border-radius:12px;box-shadow:0 3px 10px rgba(0,0,0,.08);}
+form h3{text-align:center;margin-top:0;}
+input,textarea,select,button{width:100%;padding:10px;margin:8px 0;border:1px solid #ccc;border-radius:6px;font-size:1rem;}
+button{background:#2563eb;color:#fff;cursor:pointer;border:none;}
+button:hover{background:#1e40af;}
+#live-section{max-width:1000px;margin:40px auto;padding:0 20px;}
+.live-box{background:#fff;margin-bottom:20px;padding:16px;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,.08);}
+footer{text-align:center;padding:16px;background:#0f172a;color:#fff;margin-top:40px;font-size:.9rem;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Common Service Center</h1>
+  <a href="https://bighit.co.in/ankit" class="btn">Admin Login</a>
+</header>
+
+<section class="hero">
+  <h2>Your Digital Seva Center</h2>
+  <p>Fast, Secure & Paperless Government Services at One Place</p>
+</section>
+
+<section class="services">
+  <div class="card">
+    <h3>💳 PAN / Aadhaar Services</h3>
+    <p>Apply, update or link your documents instantly.</p>
+  </div>
+  <div class="card">
+    <h3>🏦 Banking & Bill Payments</h3>
+    <p>Withdraw, deposit or pay utility bills safely.</p>
+  </div>
+  <div class="card">
+    <h3>📜 Certificates & Forms</h3>
+    <p>Birth, Caste, Income and other essential certificates.</p>
+  </div>
+  <div class="card">
+    <h3>💼 Online Applications</h3>
+    <p>Voter ID, Passport, PM Kisan & more.</p>
+  </div>
+</section>
+
+<form id="requestForm">
+  <h3>Book Appointment / Submit Task</h3>
+  <input type="text" id="name" placeholder="Your Full Name" required />
+  <input type="tel" id="phone" placeholder="Mobile Number" required />
+  <select id="service">
+    <option value="">Select Service</option>
+    <option>Apply PAN Card</option>
+    <option>Update Aadhaar</option>
+    <option>Pay Electricity Bill</option>
+    <option>Print Document</option>
+  </select>
+  <textarea id="details" rows="3" placeholder="Enter details or upload link..."></textarea>
+  <button type="submit">Submit Request</button>
+</form>
+
+<section id="live-section">
+  <div class="live-box">
+    <h3>📅 Upcoming Bank Holidays</h3>
+    <ul id="holidays">Loading...</ul>
+  </div>
+  <div class="live-box">
+    <h3>📰 Latest News</h3>
+    <ul id="news">Fetching latest updates...</ul>
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> Common Service Center • All Rights Reserved
+</footer>
+
+<script>
+// dynamic year
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// handle form
+document.getElementById("requestForm").addEventListener("submit", e=>{
+  e.preventDefault();
+  alert("✅ Request submitted successfully!\nOur team will contact you soon.");
+  e.target.reset();
+});
+
+// fetch upcoming bank holidays (India)
+(async ()=>{
+  try{
+    const y = new Date().getFullYear();
+    const r = await fetch(`https://date.nager.at/api/v3/PublicHolidays/${y}/IN`);
+    const data = await r.json();
+    const next = data.slice(0,5);
+    document.getElementById("holidays").innerHTML =
+      next.map(h=>`<li>${h.date} - ${h.localName}</li>`).join("");
+  }catch{
+    document.getElementById("holidays").innerHTML = "<li>Unable to load holidays.</li>";
+  }
+})();
+
+// simple news from India headlines API
+(async ()=>{
+  try{
+    const r = await fetch("https://newsdata.io/api/1/news?country=in&language=en&apikey=pub_38860a");
+    const d = await r.json();
+    const list = d.results.slice(0,5).map(n=>`<li><a href="${n.link}" target="_blank">${n.title}</a></li>`).join("");
+    document.getElementById("news").innerHTML = list;
+  }catch{
+    document.getElementById("news").innerHTML = "<li>Unable to load news.</li>";
+  }
+})();
+</script>
+</body>
+</html>

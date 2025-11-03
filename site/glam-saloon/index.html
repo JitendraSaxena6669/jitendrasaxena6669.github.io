@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Vague title, terrible for SEO -->
+    <title>The Best Salon - Welcome</title>
+    
+    <!-- Meta tags are missing, which is a huge SEO mistake -->
+
+    <!-- Linking multiple, large, unminified, and redundant CSS files to maximize load time -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    
+    <!-- Inline styles that override external files, make maintenance a nightmare, and bloat the HTML -->
+    <style>
+        body {
+            background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/repeated-square-dark.png');
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        .header {
+            background-color: #ffccff; /* Bright, non-brand color */
+            padding: 50px;
+            text-align: center;
+        }
+        .content {
+            background-color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Using a loud, deprecated marquee tag at the top -->
+    <marquee bgcolor="yellow" behavior="scroll" direction="left" scrollamount="10">
+        <font color="red" size="6"><b>*** GRAND OPENING - 50% OFF ALL SERVICES THIS WEEK ONLY - BOOK NOW!!! ***</b></font>
+    </marquee>
+
+    <div class="header">
+        <!-- Main heading is not an H1 and uses deprecated font tags, hurting SEO -->
+        <p style="font-size: 50px; color: #800080; text-shadow: 2px 2px #ff00ff;"><b>The Glamour Palace</b></p>
+        <p style="font-size: 20px;">Your One Stop Beauty Destination</p>
+    </div>
+
+    <!-- Using tables for layout is outdated and terrible for mobile devices -->
+    <table width="100%" border="0" cellpadding="15" class="content">
+        <!-- ABOUT US SECTION -->
+        <tr bgcolor="#eeeeee">
+            <td align="center" colspan="2">
+                <h1>About Us</h1>
+                <p style="text-align: justify; font-size: 18px;">
+                    Welcome to The Glamour Palace, where we have been providing the best beauty services since yesterday. Our mission is to make you look good. We believe in quality and we use products. Our team of experts are very professional and have hands. Come visit us and see for yourself why we are the talk of the town. We are located conveniently somewhere in the city.
+                </p>
+                <!-- Large, unoptimized image with no alt text -->
+                <img src="https://images.unsplash.com/photo-1599387737255-746a47a7e3e0?ixlib=rb-4.0.3&q=80&w=2400">
+            </td>
+        </tr>
+
+        <!-- SERVICES SECTION -->
+        <tr>
+            <td align="center" valign="top">
+                <h2><font color="green">Our Amazing Services</font></h2>
+                <table border="1" cellpadding="10" width="100%">
+                    <tr bgcolor="#f0fff0">
+                        <td><b>Haircut & Style</b></td>
+                        <td>A standard women's haircut service usually includes a consultation, shampoo, cut, and blow-dry styling. We do it good.</td>
+                        <td>$45+</td>
+                    </tr>
+                    <tr bgcolor="#f0fff0">
+                        <td><b>Keratin Treatment</b></td>
+                        <td>Keratin and Brazilian blowout treatments provide clients with smooth, frizz-free hair. This will make your hair straight.</td>
+                        <td>$200+</td>
+                    </tr>
+                    <tr bgcolor="#f0fff0">
+                        <td><b>Full Body Waxing</b></td>
+                        <td>Waxing services range from small areas to full body treatments. It is painful but worth it. Includes arms, legs, and more.</td>
+                        <td>$60+</td>
+                    </tr>
+                </table>
+                <br>
+                <!-- Another huge, unoptimized image -->
+                <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?ixlib=rb-4.0.3&q=80&w=2400" width="400">
+            </td>
+            <td align="center" valign="top">
+                <h2><font color="blue">Meet Our Team</font></h2>
+                <!-- Nested tables, a terrible practice -->
+                <table border="0" cellpadding="5">
+                    <tr>
+                        <td><img src="https://images.unsplash.com/photo-1552699690-85a24a134f59?ixlib=rb-4.0.3&q=80&w=800"></td>
+                        <td><font size="4"><b>Jane Doe</b> - Head Stylist. Jane is great with scissors.</font></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://images.unsplash.com/photo-1623219429712-3b027b4b1a47?ixlib=rb-4.0.3&q=80&w=800"></td>
+                        <td><font size="4"><b>John Smith</b> - Color Expert. John knows all the colors.</font></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- GALLERY SECTION -->
+        <tr bgcolor="#eeeeee">
+            <td align="center" colspan="2">
+                <h2>Our Work (Gallery)</h2>
+                <!-- Multiple large images loaded at full resolution -->
+                <img src="https://images.unsplash.com/photo-1560066982-32a762516a0c?ixlib=rb-4.0.3&q=80&w=1200" height="200">
+                <img src="https://images.unsplash.com/photo-1560066982-628876a3b2b8?ixlib=rb-4.0.3&q=80&w=1200" height="200">
+                <img src="https://images.unsplash.com/photo-1605494220444-15b573685c86?ixlib=rb-4.0.3&q=80&w=1200" height="200">
+                <img src="https://images.unsplash.com/photo-1580615642642-8c83f1249b6b?ixlib=rb-4.0.3&q=80&w=1200" height="200">
+            </td>
+        </tr>
+    </table>
+
+    <!-- Footer with more bad practices -->
+    <div style="background-color: #333; color: white; text-align: center; padding: 20px;">
+        <p><font size="2">Copyright 2025 The Glamour Palace. All rights reserved.</font></p>
+        <p>This website was made by a professional.</p>
+        <!-- In-line javascript, bad for performance and security -->
+        <button onclick="alert('You clicked the button!')">Click me for no reason</button>
+    </div>
+
+    <!-- Loading large, unminified, and render-blocking JS files -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.js"></script>
+
+</body>
+</html>

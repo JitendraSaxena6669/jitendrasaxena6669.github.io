@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Glamour Palace | Premium Indian Salon & Makeover Studio</title>
+    <meta name="description" content="Experience luxury beauty treatments at The Glamour Palace. Specializing in Indian bridal makeup, hair styling, and full-body wellness.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --bs-primary: #800000; 
+            --bs-secondary: #ffc107; 
+            --bs-light: #f5f5dc; 
+            --bs-font-sans-serif: 'Playfair Display', serif;
+        }
+        body {
+            font-family: var(--bs-font-sans-serif);
+            background-color: var(--bs-light);
+        }
+        .navbar-brand, .nav-link {
+            font-weight: 700;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x1080/800000/FFFFFF?text=The+Glamour+Palace');
+            background-size: cover;
+            background-position: center;
+            height: 85vh;
+            color: white;
+        }
+        .section-title {
+            color: var(--bs-primary);
+            font-weight: 700;
+            border-bottom: 3px solid var(--bs-secondary);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .card-service {
+            transition: transform 0.3s ease-in-out;
+        }
+        .card-service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: var(--bs-primary);
+            border-color: var(--bs-primary);
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #9a031e;
+            border-color: #9a031e;
+        }
+        .price-text {
+            color: var(--bs-secondary);
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="background-color: var(--bs-primary) !important;">
+    <div class="container-fluid">
+        <a class="navbar-brand text-warning" href="#">The Glamour Palace</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#team">Team</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link btn btn-sm btn-warning ms-lg-3" href="#book">BOOK NOW</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="hero-section d-flex align-items-center text-center p-5">
+    <div class="container">
+        <div class="alert alert-warning alert-dismissible fade show mb-4 fw-bold" role="alert">
+            <strong class="text-primary">GRAND OPENING OFFER!</strong> Get **50% OFF** ALL Services This Week Only! <a href="#book" class="alert-link text-primary">Book Your Appointment!</a>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+        
+        <h1 class="display-1 fw-bold text-warning" style="text-shadow: 2px 2px #800000;">The Glamour Palace</h1>
+        <p class="lead mb-4 fw-light">Where Tradition Meets Trend: Your One-Stop Beauty & Makeover Destination</p>
+        <a href="#services" class="btn btn-warning btn-lg me-2">Explore Services</a>
+        <a href="#book" class="btn btn-outline-light btn-lg">Book Now</a>
+    </div>
+</header>
+
+<main class="container my-5">
+
+    <section id="about" class="py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="section-title mb-4">About Our Palace</h2>
+                <p class="lead">Welcome to **The Glamour Palace**—more than just a salon, it's a haven of bespoke beauty inspired by the richness of Indian artistry.</p>
+                <p style="text-align: justify;">
+                    Since our inception, we've dedicated ourselves to the art of transformation. Our mission is to enhance your natural beauty with premium services, specializing in **traditional Indian bridal makeovers**, modern hair artistry, and complete wellness rituals. We use only **high-quality, ethical products** and our team comprises certified, passionate professionals committed to delivering an unparalleled, luxurious experience. Come discover your most radiant self.
+                </p>
+                <a href="#team" class="btn btn-primary mt-3">Meet Our Experts</a>
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0">
+                <img src="https://placehold.co/600x400/F5F5DC/800000?text=Luxury+Interior" class="img-fluid rounded shadow-lg" alt="Luxurious Indian Salon Interior">
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="services" class="py-5 bg-light rounded-3">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Our Signature Services</h2>
+            <p class="lead mt-2">Specialized treatments blending classic techniques with modern trends.</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card card-service h-100 border-0 shadow-sm">
+                    <img src="https://placehold.co/600x400/CCCCCC/FFFFFF?text=Haircut" class="card-img-top" alt="Haircut and Styling">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Haircut & Signature Style</h5>
+                        <p class="card-text">Includes a personalized consultation, luxurious shampoo, precision cut, and blow-dry styling. Look sharp and feel fantastic.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price-text">₹ 1,800+</span>
+                            <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card card-service h-100 border-0 shadow-sm">
+                    <img src="https://placehold.co/600x400/FFEBCD/800000?text=Bridal+Makeup" class="card-img-top" alt="Indian Bridal Makeover">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Regal Bridal Makeover</h5>
+                        <p class="card-text">Our specialty! Complete bridal package including flawless traditional or contemporary makeup, hair setting, and saree draping.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price-text">₹ 15,000+</span>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Inquire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card card-service h-100 border-0 shadow-sm">
+                    <img src="https://placehold.co/600x400/E6E6FA/000000?text=Waxing" class="card-img-top" alt="Full Body Waxing">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Luxury Full Body Waxing</h5>
+                        <p class="card-text">Gentle, hygienic waxing services using premium hot wax for smooth, long-lasting results. Includes arms, legs, and specialised areas.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price-text">₹ 2,500+</span>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Book Slot</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="team" class="py-5">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Meet Our Artisans</h2>
+            <p class="lead mt-2">Professional, certified, and passionate experts ready to serve you.</p>
+        </div>
+        
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="card text-center shadow-sm h-100">
+                    <img src="https://placehold.co/150x150/F0E68C/000000?text=Jane" class="card-img-top rounded-circle mx-auto mt-3" style="width: 150px; height: 150px; object-fit: cover;" alt="Team Member Jane Doe">
+                    <div class="card-body">
+                        <h5 class="card-title mb-0">Jane Doe</h5>
+                        <p class="text-muted small">Head Master Stylist</p>
+                        <p class="card-text">15 years of experience in transformative cuts and advanced coloring. Specializes in volume and texture.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card text-center shadow-sm h-100">
+                    <img src="https://placehold.co/150x150/DDA0DD/FFFFFF?text=John" class="card-img-top rounded-circle mx-auto mt-3" style="width: 150px; height: 150px; object-fit: cover;" alt="Team Member John Smith">
+                    <div class="card-body">
+                        <h5 class="card-title mb-0">John Smith</h5>
+                        <p class="text-muted small">Bridal & Color Expert</p>
+                        <p class="card-text">Our go-to for bridal makeup, Sangeet looks, and intricate Mehendi-inspired hair coloring. Trained in Paris.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="gallery" class="py-5 bg-light rounded-3">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Our Transformations</h2>
+            <p class="lead mt-2">A glimpse of the beautiful work created at The Glamour Palace.</p>
+        </div>
+        
+        <div class="row g-3">
+            <div class="col-6 col-md-3"><img src="https://placehold.co/600x600/C0C0C0/000000?text=Work+1" class="img-fluid rounded shadow-sm" alt="Salon Work Example 1"></div>
+            <div class="col-6 col-md-3"><img src="https://placehold.co/600x600/B0E0E6/FFFFFF?text=Work+2" class="img-fluid rounded shadow-sm" alt="Salon Work Example 2"></div>
+            <div class="col-6 col-md-3"><img src="https://placehold.co/600x600/FFDAB9/000000?text=Work+3" class="img-fluid rounded shadow-sm" alt="Salon Work Example 3"></div>
+            <div class="col-6 col-md-3"><img src="https://placehold.co/600x600/98FB98/FFFFFF?text=Work+4" class="img-fluid rounded shadow-sm" alt="Salon Work Example 4"></div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="book" class="py-5 text-center">
+        <h2 class="section-title mb-4">Ready for Your Makeover?</h2>
+        <p class="lead mb-4">Click below to easily book your appointment online today!</p>
+        <a href="mailto:booking@glamourpalace.com" class="btn btn-primary btn-lg shadow-lg">Book Your Appointment Now!</a>
+    </section>
+
+</main>
+
+<footer class="bg-dark text-white py-4" style="background-color: var(--bs-primary) !important;">
+    <div class="container text-center">
+        <p class="mb-0">&copy; <span id="year">2025</span> The Glamour Palace. All Rights Reserved.</p>
+        <p class="small text-warning mt-1">Crafted with Elegance and Bootstrap 5.</p>
+        <div class="mt-2">
+            <a href="#" class="text-white mx-2">Facebook</a> | 
+            <a href="#" class="text-white mx-2">Instagram</a> | 
+            <a href="#" class="text-white mx-2">T: +91 98765 43210</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

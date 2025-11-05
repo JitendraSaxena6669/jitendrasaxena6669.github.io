@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Best Salon and Spa in Dehradun offering professional beauty and wellness services. Book your appointment today for a relaxing experience.">
+    <meta name="keywords" content="Dehradun salon, spa in Dehradun, beauty services, wellness, massage, hair care, manicure, pedicure">
+    <meta name="author" content="Vajra Abhinav Enterprises">
+    <title>Dehradun Salon & Spa | Relax, Refresh & Rejuvenate</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { scroll-behavior: smooth; }
+        .floating-btns { position: fixed; bottom: 20px; right: 20px; z-index: 1000; display: flex; flex-direction: column; gap: 10px; }
+        .floating-btns a { background-color: #25D366; color: white; padding: 12px 16px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 6px rgba(0,0,0,0.2); transition: 0.3s; }
+        .floating-btns a.call-btn { background-color: #007bff; }
+        .floating-btns a:hover { transform: scale(1.1); text-decoration: none; }
+        .gallery img { width: 100%; height: auto; border-radius: 10px; transition: transform 0.3s; }
+        .gallery img:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Dehradun Salon & Spa</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#price">Price</a></li>
+                <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Floating Buttons -->
+<div class="floating-btns">
+    <a href="https://wa.me/919876543210" target="_blank" title="Chat on WhatsApp"><i class="fab fa-whatsapp fa-lg"></i></a>
+    <a href="tel:+919876543210" class="call-btn" title="Call Now"><i class="fas fa-phone fa-lg"></i></a>
+</div>
+
+<!-- JSON Data -->
+<script>
+const siteContent = {
+    home: {
+        title: "Welcome to Dehradun Salon & Spa",
+        description: "Experience luxury and relaxation with our professional salon and spa services in Dehradun. We provide top-notch beauty treatments, massages, hair care, and wellness packages tailored to your needs."
+    },
+    services: [
+        { name: "Haircut & Styling", desc: "Professional haircuts and styling services." },
+        { name: "Facial & Skincare", desc: "Rejuvenate your skin with our facial treatments." },
+        { name: "Manicure & Pedicure", desc: "Pamper your hands and feet." },
+        { name: "Body Massage", desc: "Relax and relieve stress with expert massages." },
+        { name: "Spa Packages", desc: "Comprehensive wellness and spa experiences." }
+    ],
+    price: [
+        { service: "Haircut", price: "₹500" },
+        { service: "Facial", price: "₹700" },
+        { service: "Manicure", price: "₹400" },
+        { service: "Pedicure", price: "₹400" },
+        { service: "Full Body Massage", price: "₹1200" }
+    ],
+    packages: [
+        { name: "Relaxation Package", details: "Full body massage + facial + manicure." },
+        { name: "Beauty Package", details: "Hair styling + facial + pedicure." }
+    ],
+    about: "Dehradun Salon & Spa is committed to providing a luxurious experience with professional beauty and wellness services. Our trained staff ensures each client leaves refreshed and rejuvenated.",
+    contact: {
+        address: "123, MG Road, Dehradun, Uttarakhand, India",
+        phone: "+91 9876543210",
+        email: "info@dehradunsalonspa.com"
+    },
+    faq: [
+        { q: "Do I need an appointment?", a: "Yes, appointments are recommended for all services." },
+        { q: "What are your working hours?", a: "Monday to Sunday: 10 AM to 8 PM" },
+        { q: "Do you provide home services?", a: "Currently, we operate from our salon premises only." }
+    ]
+};
+</script>
+
+<!-- Home Section -->
+<section id="home" class="py-5 bg-light text-center">
+    <div class="container">
+        <h1 class="display-5" id="homeTitle"></h1>
+        <p class="lead" id="homeDesc"></p>
+        <a href="#contact" class="btn btn-primary btn-lg mt-3">Book an Appointment</a>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-5">
+    <div class="container">
+        <h2 class="mb-4">Our Services</h2>
+        <div class="row" id="servicesList"></div>
+    </div>
+</section>
+
+<!-- Price Section -->
+<section id="price" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="mb-4">Price List</h2>
+        <div class="row" id="priceList"></div>
+    </div>
+</section>
+
+<!-- Packages Section -->
+<section id="packages" class="py-5">
+    <div class="container">
+        <h2 class="mb-4">Packages</h2>
+        <div class="row" id="packagesList"></div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="mb-4">Gallery</h2>
+        <div class="row gallery" id="galleryImages"></div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="mb-4">About Us</h2>
+        <p id="aboutText"></p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="mb-4">Contact Us</h2>
+        <p><strong>Address:</strong> <span id="contactAddress"></span></p>
+        <p><strong>Phone:</strong> <span id="contactPhone"></span></p>
+        <p><strong>Email:</strong> <span id="contactEmail"></span></p>
+        <div id="map" style="height:400px;width:100%;"></div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section id="faq" class="py-5">
+    <div class="container">
+        <h2 class="mb-4">FAQ</h2>
+        <div class="accordion" id="faqAccordion"></div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+    &copy; 2025 Dehradun Salon & Spa. All rights reserved.
+</footer>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Populate Sections via JSON -->
+<script>
+document.getElementById('homeTitle').innerText = siteContent.home.title;
+document.getElementById('homeDesc').innerText = siteContent.home.description;
+
+const servicesList = document.getElementById('servicesList');
+siteContent.services.forEach(s => {
+    servicesList.innerHTML += `<div class="col-md-4 mb-3">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">${s.name}</h5>
+                <p class="card-text">${s.desc}</p>
+            </div>
+        </div>
+    </div>`;
+});
+
+const priceList = document.getElementById('priceList');
+siteContent.price.forEach(p => {
+    priceList.innerHTML += `<div class="col-md-3 mb-3">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+                <h5 class="card-title">${p.service}</h5>
+                <p class="card-text">${p.price}</p>
+            </div>
+        </div>
+    </div>`;
+});
+
+const packagesList = document.getElementById('packagesList');
+siteContent.packages.forEach(p => {
+    packagesList.innerHTML += `<div class="col-md-6 mb-3">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">${p.name}</h5>
+                <p class="card-text">${p.details}</p>
+            </div>
+        </div>
+    </div>`;
+});
+
+document.getElementById('aboutText').innerText = siteContent.about;
+document.getElementById('contactAddress').innerText = siteContent.contact.address;
+document.getElementById('contactPhone').innerText = siteContent.contact.phone;
+document.getElementById('contactEmail').innerText = siteContent.contact.email;
+
+const faqAccordion = document.getElementById('faqAccordion');
+siteContent.faq.forEach((f, idx) => {
+    faqAccordion.innerHTML += `
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading${idx}">
+            <button class="accordion-button ${idx !== 0 ? 'collapsed' : ''}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${idx}">
+                ${f.q}
+            </button>
+        </h2>
+        <div id="collapse${idx}" class="accordion-collapse collapse ${idx === 0 ? 'show' : ''}" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">${f.a}</div>
+        </div>
+    </div>`;
+});
+
+// Gallery Images
+const gallery = document.getElementById('galleryImages');
+for(let i=1;i<=20;i++){
+    gallery.innerHTML += `
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+        <img src="assets/gallery/${i}.jpg" alt="Gallery Image ${i}" class="img-fluid">
+    </div>`;
+}
+
+// Google Maps
+function initMap() {
+    const dehradun = { lat: 30.3165, lng: 78.0322 };
+    const map = new google.maps.Map(document.getElementById("map"), { zoom: 14, center: dehradun });
+    const marker = new google.maps.Marker({ position: dehradun, map: map });
+}
+</script>
+
+<!-- Google Maps API -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+
+</body>
+</html>

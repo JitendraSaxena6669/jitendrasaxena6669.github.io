@@ -3,16 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <title>Page Not Found</title>
-  <meta http-equiv="refresh" content="1; url=https://bighit.co.in" />
-  <script>
-    // Optional JavaScript redirect after 3 seconds
-    setTimeout(function() {
-      window.location.href = "https://yourdomain.com";
-    }, 3000);
-  </script>
+  <!-- GitHub Pages allows meta refresh, but keep delay reasonable -->
+  <meta http-equiv="refresh" content="3; url=https://bighit.co.in" />
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 10%; }
+    a { color: #0366d6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
 </head>
 <body>
   <h1>404 - Page Not Found</h1>
-  <p>You will be redirected to the homepage shortly. If not, <a href="https://bighit.co.in">click here</a>.</p>
+  <p>Sorry, the page you're looking for doesn't exist.</p>
+  <p>You will be redirected to <a href="https://bighit.co.in">bighit.co.in</a> in 3 seconds...</p>
+  <p>If not, <a href="https://bighit.co.in">click here</a> to go to the homepage.</p>
+
+  <!-- JavaScript fallback (won't work on GitHub Pages 404, but safe to keep) -->
+  <script>
+    setTimeout(function() {
+      window.location.href = "https://bighit.co.in";
+    }, 3000);
+  </script>
 </body>
 </html>

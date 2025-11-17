@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Company in Uttarakhand | Website Design & Development Services</title>
+    <meta name="description" content="Leading web development company in Uttarakhand offering custom website design, e-commerce development, and digital solutions for businesses in Rudrapur, Dehradun, Haldwani, and across Uttarakhand.">
+    <meta name="keywords" content="web development company uttarakhand, website designer uttarakhand, ecommerce website development uttarakhand, web development services rudrapur, custom website design uttarakhand, responsive web development dehradun">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://bighit.co.in/web-development-company/uttarakhand">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Web Development Company in Uttarakhand | Website Design & Development Services">
+    <meta property="og:description" content="Leading web development company in Uttarakhand offering custom website design, e-commerce development, and digital solutions for businesses across the state.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bighit.co.in/web-development-company/uttarakhand">
+    <meta property="og:image" content="https://bighit.co.in/images/web-development-uttarakhand-og.jpg">
+    <meta property="og:site_name" content="BigHit Web Development Company Uttarakhand">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Web Development Company in Uttarakhand | Website Design & Development Services">
+    <meta name="twitter:description" content="Leading web development company in Uttarakhand offering custom website design, e-commerce development, and digital solutions.">
+    <meta name="twitter:image" content="https://bighit.co.in/images/web-development-uttarakhand-twitter.jpg">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --accent: #4cc9f0;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --success: #4bb543;
+            --gradient: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%);
+            --gradient-light: linear-gradient(135deg, #4cc9f0 0%, #4361ee 100%);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .hero-section {
+            background: var(--gradient);
+            color: white;
+            padding: 140px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,192C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            background-position: center bottom;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+        
+        .section-title.text-center::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .service-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: white;
+            font-size: 1.8rem;
+        }
+        
+        .testimonial-card {
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: none;
+        }
+        
+        .price-card {
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: none;
+            transition: transform 0.3s ease;
+        }
+        
+        .price-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .price-card.popular {
+            border: 2px solid var(--primary);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .price-card.popular::before {
+            content: 'Most Popular';
+            position: absolute;
+            top: 15px;
+            right: -30px;
+            background: var(--primary);
+            color: white;
+            padding: 5px 30px;
+            transform: rotate(45deg);
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .faq-item {
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            background: white;
+            padding: 15px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 15px 20px;
+            max-height: 500px;
+        }
+        
+        .process-step {
+            text-align: center;
+            position: relative;
+            padding: 0 20px;
+        }
+        
+        .process-step::after {
+            content: '';
+            position: absolute;
+            top: 40px;
+            right: -50%;
+            width: 100%;
+            height: 2px;
+            background: var(--primary);
+            z-index: -1;
+        }
+        
+        .process-step:last-child::after {
+            display: none;
+        }
+        
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        
+        .portfolio-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .trust-badge {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .trust-badge:hover {
+            transform: translateY(-5px);
+        }
+        
+        .city-badge {
+            background: var(--gradient-light);
+            color: white;
+            border-radius: 30px;
+            padding: 8px 20px;
+            display: inline-block;
+            margin: 5px;
+            font-weight: 500;
+        }
+        
+        .footer {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer a:hover {
+            color: white;
+        }
+        
+        .btn-primary {
+            background: var(--gradient);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(67, 97, 238, 0.3);
+        }
+        
+        .btn-outline-primary {
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            padding: 10px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline-primary:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .highlight-text {
+            background: linear-gradient(120deg, #4cc9f0 0%, #4361ee 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+        
+        @media (max-width: 768px) {
+            .process-step::after {
+                display: none;
+            }
+            
+            .hero-section {
+                padding: 120px 0 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">BigHit Web Dev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Web Development Company in Uttarakhand Driving Digital Growth</h1>
+                    <p class="lead mb-4">We build stunning, high-performance websites for businesses across Uttarakhand - from <span class="highlight-text">Rudrapur</span> to <span class="highlight-text">Dehradun</span>, <span class="highlight-text">Haldwani</span> to <span class="highlight-text">Haridwar</span>.</p>
+                    <p class="mb-4">As a local web development company, we understand the unique challenges faced by Uttarakhand businesses in establishing a powerful online presence.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#contact" class="btn btn-light btn-lg">Get Free Consultation</a>
+                        <a href="#portfolio" class="btn btn-outline-light btn-lg">View Our Work</a>
+                    </div>
+                    <div class="mt-4">
+                        <span class="city-badge">Rudrapur</span>
+                        <span class="city-badge">Dehradun</span>
+                        <span class="city-badge">Haldwani</span>
+                        <span class="city-badge">Haridwar</span>
+                        <span class="city-badge">Roorkee</span>
+                        <span class="city-badge">Kashipur</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://bighit.co.in/images/web-development-uttarakhand-hero.png" alt="Web Development Services in Uttarakhand" class="img-fluid" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="trust-badge">
+                        <i class="fas fa-medal text-primary fa-2x mb-3"></i>
+                        <h5>7+ Years Experience</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="trust-badge">
+                        <i class="fas fa-project-diagram text-primary fa-2x mb-3"></i>
+                        <h5>300+ Projects</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="trust-badge">
+                        <i class="fas fa-users text-primary fa-2x mb-3"></i>
+                        <h5>200+ Happy Clients</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="trust-badge">
+                        <i class="fas fa-award text-primary fa-2x mb-3"></i>
+                        <h5>25+ Awards</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">About Our Web Development Company in Uttarakhand</h2>
+                    <p>Founded in Rudrapur with a vision to empower Uttarakhand businesses with cutting-edge digital solutions, we've grown to become a trusted web development partner for companies across the state.</p>
+                    <p>We understand the specific challenges faced by local businesses - from <strong>limited technical expertise</strong> to <strong>budget constraints</strong> and the need for websites that work effectively in areas with varying internet connectivity.</p>
+                    <p>Our team combines global web development standards with local market understanding to create websites that not only look stunning but also drive real business results for companies in cities like Dehradun, Haldwani, Haridwar, and throughout Uttarakhand.</p>
+                    <a href="#contact" class="btn btn-primary mt-3">Schedule Consultation</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://bighit.co.in/images/about-web-development-uttarakhand.jpg" alt="About Web Development Company in Uttarakhand" class="img-fluid rounded" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5 bg-light" id="services">
+        <div class="container">
+            <h2 class="section-title text-center">Our Web Development Services in Uttarakhand</h2>
+            <p class="text-center mb-5">We offer comprehensive web development solutions tailored for businesses across Uttarakhand looking to establish a powerful online presence.</p>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card card p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4 class="text-center mb-3">Custom Website Development</h4>
+                        <p>We create bespoke websites tailored to your business needs, ensuring optimal performance and user experience. Our <a href="https://bighit.co.in/website-software-development/rudrapur" title="Website Development Services in Rudrapur">web development services in Rudrapur</a> and across Uttarakhand focus on creating websites that convert visitors into customers.</p>
+                        <ul>
+                            <li>Responsive web design</li>
+                            <li>Custom functionality development</li>
+                            <li>CMS integration (WordPress, etc.)</li>
+                            <li>Website maintenance & support</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-primary mt-3">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card card p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h4 class="text-center mb-3">E-commerce Development</h4>
+                        <p>Build powerful online stores that drive sales and growth. We specialize in creating e-commerce solutions for businesses across Uttarakhand, from local handicraft shops to larger retailers.</p>
+                        <ul>
+                            <li>Online store development</li>
+                            <li>Payment gateway integration</li>
+                            <li>Inventory management systems</li>
+                            <li>Mobile-friendly shopping experience</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-primary mt-3">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card card p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4 class="text-center mb-3">Mobile App Development</h4>
+                        <p>Extend your reach with custom mobile applications for iOS and Android. We create apps that provide seamless experiences for your customers across Uttarakhand.</p>
+                        <ul>
+                            <li>Native iOS & Android apps</li>
+                            <li>Cross-platform development</li>
+                            <li>UI/UX design for mobile</li>
+                            <li>App store optimization</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-primary mt-3">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card card p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h4 class="text-center mb-3">Jewellery Website Design</h4>
+                        <p>Create stunning online showcases for jewellery businesses with our specialized <a href="https://bighit.co.in/jewellery-website-designer/rudrapur" title="Jewellery Website Designer in Rudrapur">jewellery website design services in Rudrapur</a> and across Uttarakhand. We understand the unique needs of jewellery retailers.</p>
+                        <ul>
+                            <li>High-quality product displays</li>
+                            <li>Secure payment processing</li>
+                            <li>Custom jewellery catalogs</li>
+                            <li>Inventory management</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-primary mt-3">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card card p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h4 class="text-center mb-3">Travel Website Development</h4>
+                        <p>Build captivating online platforms for travel agencies and tour operators with our specialized <a href="https://bighit.co.in/tour-travel-website-designer-developer/rudrapur" title="Tour & Travel Website Developer in Rudrapur">travel website development services</a>. Showcase Uttarakhand's beautiful destinations effectively.</p>
+                        <ul>
+                            <li>Tour package displays</li>
+                            <li>Booking system integration</li>
+                            <li>Destination galleries</li>
+                            <li>Multi-language support</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-primary mt-3">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card card p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4 class="text-center mb-3">Website Maintenance</h4>
+                        <p>Keep your website running smoothly with our comprehensive maintenance services. We ensure your site remains secure, updated, and performing optimally.</p>
+                        <ul>
+                            <li>Regular security updates</li>
+                            <li>Performance optimization</li>
+                            <li>Content updates</li>
+                            <li>Backup & recovery</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-primary mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="py-5" id="portfolio">
+        <div class="container">
+            <h2 class="section-title text-center">Our Web Development Portfolio in Uttarakhand</h2>
+            <p class="text-center mb-5">See how we've helped businesses across Uttarakhand achieve their digital goals with custom web development solutions.</p>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-item">
+                        <img src="https://bighit.co.in/images/portfolio-jewellery-uttarakhand.jpg" alt="Jewellery Website Development in Uttarakhand" class="img-fluid" loading="lazy">
+                        <div class="p-3">
+                            <h5>Dehradun Jewellery Store</h5>
+                            <p>Designed and developed an elegant e-commerce website for a premium jewellery store in Dehradun, resulting in a 50% increase in online sales.</p>
+                            <a href="https://bighit.co.in/jewellery-website-designer/rudrapur" class="btn btn-sm btn-outline-primary">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-item">
+                        <img src="https://bighit.co.in/images/portfolio-travel-uttarakhand.jpg" alt="Travel Website Development in Uttarakhand" class="img-fluid" loading="lazy">
+                        <div class="p-3">
+                            <h5>Himalayan Travels, Haldwani</h5>
+                            <p>Created a comprehensive travel portal with booking functionality for a leading travel agency in Haldwani, increasing online bookings by 75%.</p>
+                            <a href="https://bighit.co.in/tour-travel-website-designer-developer/rudrapur" class="btn btn-sm btn-outline-primary">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-item">
+                        <img src="https://bighit.co.in/images/portfolio-education-uttarakhand.jpg" alt="Educational Website Development in Uttarakhand" class="img-fluid" loading="lazy">
+                        <div class="p-3">
+                            <h5>Educational Institute, Haridwar</h5>
+                            <p>Developed a feature-rich website with student portal for a prominent educational institute in Haridwar, increasing enrollment inquiries by 60%.</p>
+                            <a href="https://bighit.co.in/website-software-development/rudrapur" class="btn btn-sm btn-outline-primary">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Our Web Development Process</h2>
+            <p class="text-center mb-5">We follow a structured approach to ensure your web development project delivers exceptional results.</p>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h5>Discovery & Planning</h5>
+                        <p>We begin by understanding your business goals, target audience, and technical requirements to create a comprehensive project plan.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h5>Design & Prototyping</h5>
+                        <p>Our designers create wireframes and mockups for your approval, ensuring the visual design aligns with your brand and user expectations.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h5>Development & Testing</h5>
+                        <p>Our developers bring the design to life with clean, efficient code, followed by rigorous testing across devices and browsers.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h5>Launch & Support</h5>
+                        <p>We deploy your website and provide comprehensive training and ongoing support to ensure long-term success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-5" id="pricing">
+        <div class="container">
+            <h2 class="section-title text-center">Web Development Pricing Plans</h2>
+            <p class="text-center mb-5">We offer flexible pricing options to suit businesses of all sizes across Uttarakhand.</p>
+            
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="price-card card p-4 text-center">
+                        <h4>Basic Website</h4>
+                        <div class="my-4">
+                            <span class="h2 fw-bold">₹15,999</span>
+                            <span class="d-block">one-time</span>
+                        </div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">5 Page Website</li>
+                            <li class="mb-2">Responsive Design</li>
+                            <li class="mb-2">Contact Form</li>
+                            <li class="mb-2">Basic SEO Setup</li>
+                            <li class="mb-2">1 Month Support</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-primary">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="price-card card p-4 text-center popular">
+                        <h4>Business Website</h4>
+                        <div class="my-4">
+                            <span class="h2 fw-bold">₹35,999</span>
+                            <span class="d-block">one-time</span>
+                        </div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">Up to 15 Pages</li>
+                            <li class="mb-2">Custom Design</li>
+                            <li class="mb-2">CMS Integration</li>
+                            <li class="mb-2">Advanced SEO</li>
+                            <li class="mb-2">Social Media Integration</li>
+                            <li class="mb-2">3 Months Support</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="price-card card p-4 text-center">
+                        <h4>E-commerce Website</h4>
+                        <div class="my-4">
+                            <span class="h2 fw-bold">₹65,999</span>
+                            <span class="d-block">one-time</span>
+                        </div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">Product Catalog</li>
+                            <li class="mb-2">Shopping Cart</li>
+                            <li class="mb-2">Payment Gateway</li>
+                            <li class="mb-2">Inventory Management</li>
+                            <li class="mb-2">Order Tracking</li>
+                            <li class="mb-2">6 Months Support</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <p>All packages include responsive design, cross-browser compatibility, and basic SEO. <a href="#contact">Contact us</a> for custom solutions tailored to your specific business needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">What Our Clients Across Uttarakhand Say</h2>
+            <p class="text-center mb-5">Hear from businesses across Uttarakhand that have experienced growth through our web development services.</p>
+            
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="testimonial-card card p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://bighit.co.in/images/client-rudrapur.jpg" alt="Client from Rudrapur" class="rounded-circle me-3" width="60" loading="lazy">
+                            <div>
+                                <h5 class="mb-0">Rajesh Agarwal</h5>
+                                <p class="text-muted mb-0">Agarwal Jewellers, Rudrapur</p>
+                            </div>
+                        </div>
+                        <p>"BigHit created a stunning website for our jewellery store that perfectly showcases our products. Our online sales have increased significantly since launch."</p>
+                        <div class="text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="testimonial-card card p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://bighit.co.in/images/client-dehradun.jpg" alt="Client from Dehradun" class="rounded-circle me-3" width="60" loading="lazy">
+                            <div>
+                                <h5 class="mb-0">Priya Singh</h5>
+                                <p class="text-muted mb-0">Himalayan Treks, Dehradun</p>
+                            </div>
+                        </div>
+                        <p>"The team at BigHit developed an excellent travel portal for our agency. The booking system works flawlessly, and our online reservations have doubled."</p>
+                        <div class="text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="testimonial-card card p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://bighit.co.in/images/client-haldwani.jpg" alt="Client from Haldwani" class="rounded-circle me-3" width="60" loading="lazy">
+                            <div>
+                                <h5 class="mb-0">Amit Joshi</h5>
+                                <p class="text-muted mb-0">Joshi Furniture, Haldwani</p>
+                            </div>
+                        </div>
+                        <p>"Our new e-commerce website has transformed our business. We're now receiving orders from across Uttarakhand, something we never thought possible."</p>
+                        <div class="text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5" id="faq">
+        <div class="container">
+            <h2 class="section-title text-center">Frequently Asked Questions</h2>
+            <p class="text-center mb-5">Get answers to common questions about web development services in Uttarakhand.</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How long does it take to develop a website in Uttarakhand?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The timeline for website development depends on the complexity and scope of your project. A basic brochure website typically takes 2-3 weeks, while a custom e-commerce platform may require 6-8 weeks. We provide detailed project timelines during our initial consultation and maintain regular communication throughout the development process to ensure we meet agreed deadlines.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Do you provide website maintenance services after development?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer comprehensive website maintenance packages to ensure your site remains secure, updated, and performing optimally. Our maintenance services include regular security updates, performance optimization, content updates, and technical support. We offer flexible maintenance plans tailored to your specific needs and budget.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Can you help with website hosting and domain registration?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! We provide complete web solutions, including domain registration and reliable hosting services. We can help you choose the right hosting plan based on your website's requirements and handle the entire setup process. Our hosting solutions are optimized for performance and security, ensuring your website loads quickly and remains accessible to visitors across Uttarakhand and beyond.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What makes your web development company different from others in Uttarakhand?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>As a Uttarakhand-based company, we combine global web development expertise with deep local market understanding. We're familiar with the unique challenges and opportunities facing businesses in our state, from connectivity considerations in remote areas to cultural nuances that impact user experience. Additionally, we provide personalized service, transparent communication, and focus on delivering websites that drive real business results rather than just creating visually appealing designs.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Do you offer specialized services for specific industries like jewellery or travel?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we have extensive experience developing websites for specific industries. Our <a href="https://bighit.co.in/jewellery-website-designer/rudrapur" title="Jewellery Website Design Services">jewellery website design services</a> focus on high-quality product displays and secure e-commerce functionality. Similarly, our <a href="https://bighit.co.in/tour-travel-website-designer-developer/rudrapur" title="Travel Website Development Services">travel website development services</a> include booking systems, destination galleries, and multi-language support. We understand the unique requirements of different industries and create tailored solutions that address specific business needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5 bg-light" id="contact">
+        <div class="container">
+            <h2 class="section-title text-center">Contact Our Web Development Company in Uttarakhand</h2>
+            <p class="text-center mb-5">Ready to build your website? Get in touch with our team for a free consultation.</p>
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card p-4">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Your Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="business" class="form-label">Business Name</label>
+                                <input type="text" class="form-control" id="business">
+                            </div>
+                            <div class="mb-3">
+                                <label for="city" class="form-label">City in Uttarakhand</label>
+                                <select class="form-select" id="city">
+                                    <option value="">Select your city</option>
+                                    <option value="rudrapur">Rudrapur</option>
+                                    <option value="dehradun">Dehradun</option>
+                                    <option value="haldwani">Haldwani</option>
+                                    <option value="haridwar">Haridwar</option>
+                                    <option value="roorkee">Roorkee</option>
+                                    <option value="kashipur">Kashipur</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="service" class="form-label">Service Interested In</label>
+                                <select class="form-select" id="service">
+                                    <option value="">Select a service</option>
+                                    <option value="website-design">Website Design</option>
+                                    <option value="ecommerce">E-commerce Development</option>
+                                    <option value="mobile-app">Mobile App Development</option>
+                                    <option value="jewellery-website">Jewellery Website</option>
+                                    <option value="travel-website">Travel Website</option>
+                                    <option value="website-maintenance">Website Maintenance</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea class="form-control" id="message" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="card p-4 h-100">
+                        <h4 class="mb-4">Get in Touch</h4>
+                        
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-map-marker-alt text-primary me-3 mt-1"></i>
+                            <div>
+                                <h6>Our Office</h6>
+                                <p>123 Tech Park, Industrial Area, Rudrapur, Uttarakhand 263153</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-phone text-primary me-3 mt-1"></i>
+                            <div>
+                                <h6>Call Us</h6>
+                                <p>+91 9876543210</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-envelope text-primary me-3 mt-1"></i>
+                            <div>
+                                <h6>Email Us</h6>
+                                <p>info@bighit.co.in</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-clock text-primary me-3 mt-1"></i>
+                            <div>
+                                <h6>Business Hours</h6>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                <p>Saturday: 10:00 AM - 2:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <h6>Follow Us</h6>
+                            <div class="d-flex gap-3 mt-2">
+                                <a href="#" class="text-primary"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="text-primary"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-primary"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="text-primary"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-5">
+                <div class="card">
+                    <div class="card-body p-0">
+                        <!-- Google Map Embed -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.856366114896!2d79.40416631509823!3d28.988888882218222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a07f9c0e6d3c3b%3A0x2b9c8d7b4b3a3b3a!2sRudrapur%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1629876543210!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="mb-4">BigHit Web Development</h4>
+                    <p>Leading web development company in Uttarakhand helping businesses across the state establish powerful online presence through custom website solutions.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home">Home</a></li>
+                        <li class="mb-2"><a href="#about">About Us</a></li>
+                        <li class="mb-2"><a href="#services">Services</a></li>
+                        <li class="mb-2"><a href="#portfolio">Portfolio</a></li>
+                        <li class="mb-2"><a href="#pricing">Pricing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-4">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Website Development</a></li>
+                        <li class="mb-2"><a href="https://bighit.co.in/website-software-development/rudrapur">Custom Web Solutions</a></li>
+                        <li class="mb-2"><a href="#">E-commerce Development</a></li>
+                        <li class="mb-2"><a href="#">Mobile App Development</a></li>
+                        <li class="mb-2"><a href="https://bighit.co.in/jewellery-website-designer/rudrapur">Jewellery Website Design</a></li>
+                        <li class="mb-2"><a href="https://bighit.co.in/tour-travel-website-designer-developer/rudrapur">Travel Website Development</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p>Subscribe to our newsletter for web development tips and updates.</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Your email address">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-5">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">© 2023 BigHit Web Development. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="/privacy-policy">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="/terms-conditions">Terms & Conditions</a></li>
+                        <li class="list-inline-item"><a href="/sitemap.xml">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+                
+                const icon = question.querySelector('i');
+                if (faqItem.classList.contains('active')) {
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+        
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "BigHit Web Development Company",
+        "description": "Web Development Company in Uttarakhand offering custom website design, e-commerce development, and digital solutions for businesses across the state.",
+        "url": "https://bighit.co.in/web-development-company/uttarakhand",
+        "telephone": "+91-9876543210",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Tech Park, Industrial Area",
+            "addressLocality": "Rudrapur",
+            "addressRegion": "Uttarakhand",
+            "postalCode": "263153",
+            "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 28.9888889,
+            "longitude": 79.4041663
+        },
+        "openingHours": "Mo-Fr 09:00-18:00, Sa 10:00-14:00",
+        "areaServed": {
+            "@type": "State",
+            "name": "Uttarakhand"
+        },
+        "serviceType": "Web Development Services",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Web Development Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Custom Website Development"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "E-commerce Development"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Mobile App Development"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Jewellery Website Design"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Travel Website Development"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How long does it take to develop a website in Uttarakhand?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The timeline for website development depends on the complexity and scope of your project. A basic brochure website typically takes 2-3 weeks, while a custom e-commerce platform may require 6-8 weeks. We provide detailed project timelines during our initial consultation and maintain regular communication throughout the development process to ensure we meet agreed deadlines."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you provide website maintenance services after development?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we offer comprehensive website maintenance packages to ensure your site remains secure, updated, and performing optimally. Our maintenance services include regular security updates, performance optimization, content updates, and technical support. We offer flexible maintenance plans tailored to your specific needs and budget."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What makes your web development company different from others in Uttarakhand?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "As a Uttarakhand-based company, we combine global web development expertise with deep local market understanding. We're familiar with the unique challenges and opportunities facing businesses in our state, from connectivity considerations in remote areas to cultural nuances that impact user experience. Additionally, we provide personalized service, transparent communication, and focus on delivering websites that drive real business results rather than just creating visually appealing designs."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "BigHit Web Development Company",
+        "image": "https://bighit.co.in/images/web-development-uttarakhand-og.jpg",
+        "@id": "https://bighit.co.in/web-development-company/uttarakhand",
+        "url": "https://bighit.co.in/web-development-company/uttarakhand",
+        "telephone": "+91-9876543210",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Tech Park, Industrial Area",
+            "addressLocality": "Rudrapur",
+            "addressRegion": "Uttarakhand",
+            "postalCode": "263153",
+            "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 28.9888889,
+            "longitude": 79.4041663
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+        },
+        "sameAs": [
+            "https://www.facebook.com/bighitwebdev",
+            "https://www.twitter.com/bighitwebdev",
+            "https://www.instagram.com/bighitwebdev",
+            "https://www.linkedin.com/company/bighitwebdev"
+        ]
+    }
+    </script>
+</body>
+</html>
